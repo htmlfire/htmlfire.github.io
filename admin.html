@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - HTMLFire</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #1e1e1e; color: white; text-align: center; }
+        input, button { width: 90%; margin-top: 10px; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <input type="text" id="username" placeholder="Username"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button onclick="adminLogin()">Login</button>
+
+    <script>
+        function adminLogin() {
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+            if (user === "Admin" && pass === "258369") {
+                alert("Access Granted (Simulated)");
+            } else {
+                alert("Access Denied");
+            }
+        }
+    </script>
+</body>
+</html>
