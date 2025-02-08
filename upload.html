@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload HTML - HTMLFire</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #1e1e1e; color: white; text-align: center; }
+        textarea { width: 90%; height: 200px; background-color: #333; color: white; padding: 10px; }
+        button { background-color: #ff6600; color: white; padding: 10px; border: none; cursor: pointer; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Upload HTML</h1>
+    <textarea id="htmlCode" placeholder="Enter your HTML here..."></textarea><br>
+    <button onclick="bakeHTML()">Bake</button>
+    <p id="output"></p>
+
+    <script>
+        function bakeHTML() {
+            const bakeCode = Math.floor(100000 + Math.random() * 900000);
+            const password = Math.random().toString(36).slice(-10);
+            document.getElementById('output').innerHTML = 
+                `Bake Code: <strong>${bakeCode}</strong><br> 
+                 Password: <strong>${password}</strong> (DO NOT SHARE)`;
+        }
+    </script>
+</body>
+</html>
