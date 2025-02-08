@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit HTML - HTMLFire</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #1e1e1e; color: white; text-align: center; }
+        textarea, input, button { width: 90%; margin-top: 10px; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Edit HTML</h1>
+    <input type="text" id="bakeCode" placeholder="Enter Bake Code"><br>
+    <input type="password" id="password" placeholder="Enter Password"><br>
+    <textarea id="htmlCode" placeholder="Edit your HTML..."></textarea><br>
+    <button onclick="saveEdit()">Save</button>
+    <button onclick="deleteFile()">Delete</button>
+
+    <script>
+        function saveEdit() {
+            alert("HTML Updated! (Simulated)");
+        }
+        function deleteFile() {
+            alert("HTML Deleted! (Simulated)");
+        }
+    </script>
+</body>
+</html>
